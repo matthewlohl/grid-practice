@@ -1,0 +1,74 @@
+:root {
+    --duskyblue: #845EC2;
+    --seablue: #9B89B3;
+    --duskypink: #FFF6FF;
+    --lightpink: #FFF6FF;
+    --darkduskypink: #845EC2;
+  }
+
+  *{
+    box-sizing: border-box;
+}
+
+  
+  body {
+    color: var(--seablue);
+    font-family: monospace;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: var(--lightpink);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+  }
+  
+  header {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  header,
+  footer {
+    color: white;
+    background-color: var(--darkduskypink);
+  }
+  
+  aside {
+    background-color: var(--duskyblue);
+    color: darkred;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--duskyblue);
+  }
+  
+  a:hover {
+    color: var(--seablue);
+  }
+  
+  
+  article section {
+    background-color: var(--seablue);
+    font-family: 'Poor Story', cursive;
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  
+  #image {
+    background: url("https://resize.hswstatic.com/w_907/gif/rabbits-crazy-march-1a.jpg");
+    background-size: cover;
+    background-position: -50px;
+  }
+  
+  a::before,
+  a::after {
+    content: ' | ';
+  }
